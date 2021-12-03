@@ -15,7 +15,7 @@ for i in range(2,phi):
 print(e,d)
 
 m = int(input("enter the plaintext : "))
-en = (m**e) % phi
+en = (m**e) % (a*b)
 print("encrypted : ",en)
-de = (en**d) % phi
+de = (en**d) % (a*b)
 print("decrypted : ",de)
